@@ -1,12 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
-
 html,
 body {
   overflow: hidden;
   padding-top: 60px;
 }
 
+h1,
+h2,
+h3 {
+  color: #F0F0F0;
+}
+
+p {
+  color: #F0F0F0;
+}
+
+a {
+  color: #C1C1C1;
+}
+
+a:hover {
+  color: #007BFF;
+}
+
+.section-highlight {
+  background-color: #E4D7F0;
+}
+
 .background {
+  /* background-color: #4c3d40; */
+  color: #F0F0F0;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -42,23 +65,41 @@ body {
 }
 
 .background:nth-child(2) {
-  background-image: url(https://i.postimg.cc/W14vywqg/photo-1424746219973-8fe3bd07d8e3.jpg);
+  /* background-image: url("../asset/dark-textured-background-with-deep-blue-tones_1046581-1657.avif"); */
+  background: linear-gradient(#86a2c2,#3f3d3e)
 }
 
 .background:nth-child(3) {
-  background-image: url(https://i.postimg.cc/TY0xQ41T/photo-1433840496881-cbd845929862.jpg);
+  background-image: url("../asset/grad-pic.jpeg");
+}
+
+.background:nth-child(4) {
+  background-image: url("../asset/career-slide.jpg");
+}
+
+.background:nth-child(5) {
+  /* background-image: url("../asset/career-slide.jpg"); */
+  background-color:#35649b;
 }
 
 /* Set stacking context of slides */
 .background:nth-child(1) {
-  z-index: 3;
+  z-index: 5;
 }
 
 .background:nth-child(2) {
-  z-index: 2;
+  z-index: 4;
 }
 
 .background:nth-child(3) {
+  z-index: 3;
+}
+
+.background:nth-child(4) {
+  z-index: 2;
+}
+
+.background:nth-child(5) {
   z-index: 1;
 }
 
@@ -70,7 +111,6 @@ body {
   flex-flow: column nowrap;
   color: #fff;
   font-family: Montserrat;
-  text-transform: uppercase;
   transform: translateY(40vh);
   will-change: transform;
   backface-visibility: hidden;
@@ -78,8 +118,38 @@ body {
 }
 
 .content-title {
-  font-size: 12vh;
+  font-size: 8vh;
   line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.content-greetings-text{
+  font-size: 3vh;
+  line-height: 1.4;
+}
+
+.content-subtitle{
+  font-size: 4vh;
+  line-height: 1.4;
+}
+
+.content-subtitle.about-me {
+  font-family: Montserrat;
+  font-weight: 200;
+  font-size: 3vh;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.content-subtitle.edu-bg {
+  font-weight: 200;
+  font-size: 3vh;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.prog-lang{
+  font-size: 5vh;
 }
 
 .background.up-scroll {
@@ -112,4 +182,141 @@ body {
 
 .background.down-scroll+.background:not(.down-scroll) .content-wrapper {
   transform: translateY(15vh);
+}
+
+.content-downloads{
+  margin-top: 10rem;
+  margin-bottom: 20rem;
+}
+
+.content-downloads-edu{
+  margin-top: 3rem;
+}
+
+.content-button-link {
+  background-color: #1b2936;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 3rem;
+  margin: 3rem;
+  min-width: 6rem;
+  text-decoration: none;
+  font-size: 2vh;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-shadow: 1rem 1rem 1rem rgba(74, 68, 68, 0.2);
+}
+
+.content-button-link:hover {
+  background-color: #202f40;
+  color: rgb(101, 142, 155)
+  /* Darker shade on hover */
+}
+
+.typewriter {
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid whitesmoke;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 2s steps(50, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: whitesmoke;
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+}
+
+.grid-item {
+  color: white;
+  padding: 1rem;
+  font-size: 3vh;
+  justify-content: auto;
+}
+
+.logo{
+  width:30rem;
+  max-width: 30rem;
+}
+
+.fazz-logo{
+  padding-top: 5rem
+}
+
+.content-career-desc {
+  font-size: 2vh;
+}
+.tech-stack{
+  display:block;
+  font-size: 3vh;
+  margin: 1rem;
+}
+
+.navbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  padding-right: 3rem;
+  z-index: 10;
+  padding: 1rem;
+
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 1.5rem;
+}
+
+.navbar a {
+  color: #F0F0F0;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+.navbar a:hover {
+  color: #007BFF;
 }

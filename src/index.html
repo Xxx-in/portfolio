@@ -4,30 +4,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lim Zhi Xin's Portfolio</title>
-  <link rel="stylesheet" href="../stylesheet/index.css">
+  <title>Zhi Xin's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pngitem.com%2Fso%2Fwave-emoji%2F&psig=AOvVaw24w3wHWTIR_kNqDsBP4kSk&ust=1729363437744000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCJjulv3KmIkDFQAAAAAdAAAAABAJ">
+  <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home •</a></li>
+      <li><a href="#about-me">About Me •</a></li>
+      <li><a href="#education">Education Background •</a></li>
+      <li><a href="#career">Career History •</a></li>
+      <li><a href="#tech-stack-kit">My Tech Stack Kit •</a></li>
+    </ul>
+  </nav>
+
   <div class="container">
-    <section class="background">
+    <section class="background" id="home">
       <div class="content-wrapper">
-        <p class="content-title">Hi, welcome👋 Thanks for dropping by!</p>
-        <p class="content-subtitle">Check out my <a link>resume</a></p>
+        <p class="content-title typewriter">Hello, World👋</p>
+        <p class="content-downloads">
+          <a href="file.txt" download="file.txt" class="content-button-link">View Resume</a>
+        </p>
+        <p class="content-greetings-text">Thanks for dropping by!<br> Scroll for more <br>
+          <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+            class="bi bi-chevron-double-down" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+              d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+            <path fill-rule="evenodd"
+              d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708" />
+          </svg>
+        </p>
       </div>
     </section>
-    <section class="background">
+    <section class="background about-me" id="about-me">
       <div class="content-wrapper">
-        <p class="content-title">Hi, welcome👋 Thanks for dropping by!</p>
-        <p class="content-subtitle">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-          himenaeos. Cras ut massa mattis nibh semper pretium.</p>
+        <p class="content-title">About me</p>
+        <p class="content-subtitle about-me"> A curious soul with a keen eye for detecting real-life problems;<br>
+          always on the journey of exploring new ideas and enjoys realizing creative solutions
+          through the power of tech. </p>
       </div>
     </section>
-    <section class="background">
+    <section class="background" id="education">
       <div class="content-wrapper">
-        <p class="content-title">Etiam consequat lectus.</p>
-        <p class="content-subtitle">Nullam tristique urna sed tellus ornare congue. Etiam vitae erat at nibh aliquam
-          dapibus.</p>
+        <p class="content-title">Education Background</p>
+        <p class="content-subtitle edu-bg">Graduated First Class Honors with <br>Bachelor Degree of Computer Science
+          2019 cohort<br> from University Nottingham Malaysia
+          <br><br>(2019-2022)
+        </p>
+        <p class="content-downloads-edu">
+        <p><a href="file.txt" download="file.txt" class="content-button-link">View Academic Transcript</a></p>
+        </p>
+      </div>
+    </section>
+    <section class="background" id="career">
+      <div class="content-wrapper">
+        <p class="content-title">Career History</p>
+        <div class="grid-container">
+          <div class="grid-item">Nov 2022 - Mar 2023</div>
+          <div class="grid-item">Aug 2022 - Aug 2023</div>
+
+          <div class="grid-item"><img class="logo fazz-logo" src="../asset/fazz_logo.png" alt="FazzFinancial Logo">
+          </div>
+          <div class="grid-item"><img class="logo" src="../asset/sunwaymoney_logo.png" alt="SunwayMoney Logo"></div>
+
+          <div class="grid-item">Backend Developer, Golang</div>
+          <div class="grid-item">Fullstack Developer, Javascript Framework</div>
+
+          <div class="grid-item content-career-desc">FazzFinancial, the Indonesian FinTech startup,
+            <br>my first company and nuturing ground <br> whom I met inspiring seniors that showed me<br> the limitless
+            possibilities of tech in this ever-growing
+            era.
+          </div>
+          <div class="grid-item content-career-desc">
+            Sunway Money is a FinTech company providing <br>
+            international e-remittance service.
+            <br>A fruitful 1 year in which
+            challenged me continuously <br>to become a better version of myself everyday.
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="background" id="tech-stack-kit">
+      <div class="content-wrapper">
+        <p class="content-title">My Tech Stack Kit</p>
+        <p class="content-subtitle">
+          <p class="tech-stack">HTML</p>
+          <p class="tech-stack">CSS</p>
+          <p class="tech-stack">Javascript</p>
+          <p class="tech-stack">ReactJS</p>
+          <p class="tech-stack">NodeJs</p>
+          <p class="tech-stack">Java</p>
+          <p class="tech-stack">C++</p>
+          <p class="tech-stack">R</p>
       </div>
     </section>
   </div>
