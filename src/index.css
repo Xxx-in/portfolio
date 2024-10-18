@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+
 html,
 body {
   overflow: hidden;
@@ -66,7 +67,7 @@ a:hover {
 
 .background:nth-child(2) {
   /* background-image: url("../asset/dark-textured-background-with-deep-blue-tones_1046581-1657.avif"); */
-  background: linear-gradient(#86a2c2,#3f3d3e)
+  background: linear-gradient(#86a2c2, #3f3d3e)
 }
 
 .background:nth-child(3) {
@@ -79,7 +80,7 @@ a:hover {
 
 .background:nth-child(5) {
   /* background-image: url("../asset/career-slide.jpg"); */
-  background-color:#35649b;
+  background-color: #35649b;
 }
 
 /* Set stacking context of slides */
@@ -118,38 +119,38 @@ a:hover {
 }
 
 .content-title {
-  font-size: 15rem;
+  font-size: 8vh;
   line-height: 1.4;
   text-transform: uppercase;
 }
 
-.content-greetings-text{
-  font-size: 5rem;
+.content-greetings-text {
+  font-size: 3vh;
   line-height: 1.4;
 }
 
-.content-subtitle{
-  font-size: 8rem;
+.content-subtitle {
+  font-size: 4vh;
   line-height: 1.4;
 }
 
 .content-subtitle.about-me {
   font-family: Montserrat;
   font-weight: 200;
-  font-size: 5rem;
+  font-size: 3vh;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
 .content-subtitle.edu-bg {
   font-weight: 200;
-  font-size: 7rem;
+  font-size: 3vh;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
-.prog-lang{
-  font-size: 5rem;
+.prog-lang {
+  font-size: 5vh;
 }
 
 .background.up-scroll {
@@ -184,12 +185,12 @@ a:hover {
   transform: translateY(15vh);
 }
 
-.content-downloads{
+.content-downloads {
   margin-top: 10rem;
   margin-bottom: 20rem;
 }
 
-.content-downloads-edu{
+.content-downloads-edu {
   margin-top: 3rem;
 }
 
@@ -200,9 +201,9 @@ a:hover {
   border-radius: 50px;
   padding: 3rem;
   margin: 3rem;
-  min-width: 8rem;
+  min-width: 6rem;
   text-decoration: none;
-  font-size: 4rem;
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s;
   box-shadow: 1rem 1rem 1rem rgba(74, 68, 68, 0.2);
@@ -211,7 +212,7 @@ a:hover {
 .content-button-link:hover {
   background-color: #202f40;
   color: rgb(101, 142, 155)
-  /* Darker shade on hover */
+    /* Darker shade on hover */
 }
 
 .typewriter {
@@ -264,25 +265,26 @@ a:hover {
 .grid-item {
   color: white;
   padding: 1rem;
-  font-size: 7rem;
+  font-size: 3vh;
   justify-content: auto;
 }
 
-.logo{
-  width:30rem;
+.logo {
+  width: 30rem;
   max-width: 30rem;
 }
 
-.fazz-logo{
+.fazz-logo {
   padding-top: 5rem
 }
 
 .content-career-desc {
-  font-size: 4rem;
+  font-size: 2vh;
 }
-.tech-stack{
-  display:block;
-  font-size: 6rem;
+
+.tech-stack {
+  display: block;
+  font-size: 3vh;
   margin: 1rem;
 }
 
@@ -314,7 +316,7 @@ a:hover {
 .navbar a {
   color: #F0F0F0;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 2vh;
 }
 
 .navbar a:hover {
