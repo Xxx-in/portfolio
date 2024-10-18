@@ -322,3 +322,46 @@ a:hover {
 .navbar a:hover {
   color: #007BFF;
 }
+
+
+/* Media Queries for small devices */
+@media (max-width: 768px) {
+  .navbar {
+    display: block;
+    /* Show the navbar on smaller screens */
+  }
+
+  .content-title {
+    font-size: 10vw;
+    /* Larger title on mobile */
+  }
+
+  .content-greetings-text,
+  .content-subtitle {
+    font-size: 5vw;
+    /* Larger greetings text on mobile */
+  }
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    /* Stack items on mobile */
+  }
+
+  .grid-item {
+    font-size: 4vw;
+    /* Responsive font size */
+  }
+
+  .logo {
+    width: 80%;
+    /* Make logos responsive */
+  }
+
+  .content-button-link.download-resume{
+    display: none;
+  }
+
+  .content-button-link{
+    padding:2rem;
+  }
+}
