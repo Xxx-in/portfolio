@@ -4,8 +4,6 @@ html,
 body {
   overflow: hidden;
   padding-top: 60px;
-  font-size: 16px;
-  /* Base font size */
 }
 
 h1,
@@ -31,6 +29,7 @@ a:hover {
 }
 
 .background {
+  /* background-color: #4c3d40; */
   color: #F0F0F0;
   background-size: cover;
   background-repeat: no-repeat;
@@ -67,7 +66,8 @@ a:hover {
 }
 
 .background:nth-child(2) {
-  background: linear-gradient(#86a2c2, #3f3d3e);
+  /* background-image: url("../asset/dark-textured-background-with-deep-blue-tones_1046581-1657.avif"); */
+  background: linear-gradient(#86a2c2, #3f3d3e)
 }
 
 .background:nth-child(3) {
@@ -79,9 +79,11 @@ a:hover {
 }
 
 .background:nth-child(5) {
+  /* background-image: url("../asset/career-slide.jpg"); */
   background-color: #35649b;
 }
 
+/* Set stacking context of slides */
 .background:nth-child(1) {
   z-index: 5;
 }
@@ -117,32 +119,32 @@ a:hover {
 }
 
 .content-title {
-  font-size: 8vw;
-  /* Responsive font size */
+  font-size: 8vh;
   line-height: 1.4;
   text-transform: uppercase;
 }
 
 .content-greetings-text {
-  font-size: 4vw;
-  /* Responsive font size */
+  font-size: 3vh;
   line-height: 1.4;
 }
 
 .content-subtitle {
-  font-size: 4vw;
-  /* Responsive font size */
+  font-size: 4vh;
   line-height: 1.4;
 }
 
 .content-subtitle.about-me {
+  font-family: Montserrat;
   font-weight: 200;
+  font-size: 3vh;
   margin-left: 2rem;
   margin-right: 2rem;
 }
 
 .content-subtitle.edu-bg {
   font-weight: 200;
+  font-size: 3vh;
   margin-left: 2rem;
   margin-right: 2rem;
 }
@@ -197,13 +199,11 @@ a:hover {
   color: white;
   border: none;
   border-radius: 50px;
-  padding: 2rem;
-  /* Adjusted for better touch targets */
-  margin: 2rem;
+  padding: 3rem;
+  margin: 3rem;
   min-width: 6rem;
   text-decoration: none;
-  font-size: 2.5vw;
-  /* Responsive font size */
+  font-size: 2vh;
   cursor: pointer;
   transition: background-color 0.3s;
   box-shadow: 1rem 1rem 1rem rgba(74, 68, 68, 0.2);
@@ -211,31 +211,34 @@ a:hover {
 
 .content-button-link:hover {
   background-color: #202f40;
-  color: rgb(101, 142, 155);
+  color: rgb(101, 142, 155)
+    /* Darker shade on hover */
 }
 
 .typewriter {
   overflow: hidden;
   /* Ensures the content is not revealed until the animation */
   border-right: .15em solid whitesmoke;
-  /* The typewriter cursor */
+  /* The typwriter cursor */
   white-space: nowrap;
   /* Keeps the content on a single line */
   margin: 0 auto;
   /* Gives that scrolling effect as the typing happens */
   letter-spacing: .15em;
   /* Adjust as needed */
-  animation: typing 2s steps(50, end), blink-caret .75s step-end infinite;
+  animation:
+    typing 2s steps(50, end),
+    blink-caret .75s step-end infinite;
 }
 
 /* The typing effect */
 @keyframes typing {
   from {
-    width: 0;
+    width: 0
   }
 
   to {
-    width: 100%;
+    width: 100%
   }
 }
 
@@ -244,7 +247,7 @@ a:hover {
 
   from,
   to {
-    border-color: transparent;
+    border-color: transparent
   }
 
   50% {
@@ -272,7 +275,7 @@ a:hover {
 }
 
 .fazz-logo {
-  padding-top: 5rem;
+  padding-top: 5rem
 }
 
 .content-career-desc {
@@ -287,7 +290,6 @@ a:hover {
 
 .navbar {
   display: none;
-  /* Default to hidden, show in media query */
   position: fixed;
   top: 0;
   width: 100%;
@@ -296,6 +298,7 @@ a:hover {
   padding-right: 3rem;
   z-index: 10;
   padding: 1rem;
+
 }
 
 .navbar ul {
@@ -318,38 +321,4 @@ a:hover {
 
 .navbar a:hover {
   color: #007BFF;
-}
-
-/* Media Queries for small devices */
-@media (max-width: 768px) {
-  .navbar {
-    display: block;
-    /* Show the navbar on smaller screens */
-  }
-
-  .content-title {
-    font-size: 10vw;
-    /* Larger title on mobile */
-  }
-
-  .content-greetings-text,
-  .content-subtitle {
-    font-size: 5vw;
-    /* Larger greetings text on mobile */
-  }
-
-  .grid-container {
-    grid-template-columns: 1fr;
-    /* Stack items on mobile */
-  }
-
-  .grid-item {
-    font-size: 4vw;
-    /* Responsive font size */
-  }
-
-  .logo {
-    width: 80%;
-    /* Make logos responsive */
-  }
 }
