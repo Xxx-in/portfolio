@@ -1,3 +1,2 @@
 # Redirects from what the browser requests to what we serve
-/zhixinislooking4ajob.netlify.app/* https://zhixinislooking4ajob.netlify.app/src/index.html 200
-/* /index.html  200
+/*    /src/index.html   200

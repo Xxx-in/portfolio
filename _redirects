@@ -1,4 +1,0 @@
-# Redirects from what the browser requests to what we serve
-
-/zhixinislooking4ajob.netlify.app/_ https://zhixinislooking4ajob.netlify.app/src/index.html 200
-/_ /index.html 200
